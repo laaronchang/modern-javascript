@@ -13,9 +13,10 @@
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("/* global moment */\n\nlet x = \"These are not the droids you are looking for.\";\nconsole.log(x);\n\nvar moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\"); // require\nmoment().format();\n\nconsole.log(moment().startOf(\"day\").fromNow());\n\nconsole.log(moment().subtract(10, 'days').calendar());\n\nconsole.log(moment().format('YYYY [pwn] YYYY'));\n\n//# sourceURL=webpack://modern-javascript/./index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);\n/* global moment */\n\nvar x = \"These are not the droids you are looking for.\";\nconsole.log(x);\n\n// var moment = require('moment'); // require\n// moment().format();\n\n// console.log(moment().startOf(\"day\").fromNow());\n\n// console.log(moment().subtract(10, 'days').calendar());\n\n// console.log(moment().format('YYYY [pwn] YYYY'));\n\n\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_0___default()().startOf(\"day\").fromNow());\n\n//# sourceURL=webpack://modern-javascript/./index.js?");
 
 /***/ }),
 
@@ -1439,9 +1440,44 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\n//! mome
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
