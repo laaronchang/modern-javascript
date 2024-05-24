@@ -15,3 +15,4 @@ console.log(x);
 import moment from 'moment';
 
 console.log(moment().startOf("day").fromNow());
+console.log("Yo, MTV Raps!");
