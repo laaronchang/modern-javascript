@@ -3,13 +3,11 @@
 let x = "These are not the droids you are looking for.";
 console.log(x);
 
+var moment = require('moment'); // require
+moment().format();
 
+console.log(moment().startOf("day").fromNow());
 
-var datetime = requiremoment().startOf("day").fromNow();
-console.log(datetime);
+console.log(moment().subtract(10, 'days').calendar());
 
-var calendar = moment().subtract(10, 'days').calendar();
-console.log(calendar);
-
-var stuff = moment().format('YYYY [pwn] YYYY');
-console.log(stuff)
+console.log(moment().format('YYYY [pwn] YYYY'));
